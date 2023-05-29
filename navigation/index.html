@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <link rel="stylesheet" href="index.css">
+    </head>
+<body>
+    <div class="nav-fixed" >
+        <div class="nav-mixed">
+            <select name="name" id="name">
+                <option value="user">User</option>
+                <option value="priyanka">Priyanka</option>
+                
+            </select>
+            <img src="User_Icon.png" alt="image">
+        </div>
+        
+    </div>
+    <div class="link">
+        <ul >
+            <li><a href="#" onclick="openPage('dashboard.html')">Dashboard</a></li>
+            <li><a href="#" onclick="openPage('userList.html')">User List</a></li>
+            <li><a href="#" onclick="openPage('userSetup.html')">User Setup</a></li>
+            <li><a href="#" onclick="openPage('userDetails.html')">User Details</a></li>
+        </ul>
+    </div>
+    <div>
+        <iframe id="myIframe" width="100%" height="50" title="dummy" style="border:1px ridge rgb(171, 167, 167); background-color: rgba(203, 181, 181, 0.443);">
+        </iframe>
+    </div>
+    <script>
+        function openPage(url) {
+            document.getElementById("myIframe").src = url;
+  
+
+        }
+    </script>
+</body>
+</html>
